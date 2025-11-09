@@ -44,6 +44,10 @@ colcon build
 ```
 ros2 run <pkg_name> <node_name as defined in setup.py>
 ros2 launch <pkg_name> <launch_file_name>
+
+#to obtain .rviz file
+ros2 launch urdf_tutorial display.launch.xml model:=<path_to_urdf_file>
+(in the opened rviz2 window, import RobotModel, TF and save as .rviz)
 ```
 
 To make the robot move in a straight line/circle, run the following the command by modifying it with the appropriate linear and angular values (for straight line linear x:0.5, for circle linear x:0.5, angular z:0.5):
